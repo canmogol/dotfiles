@@ -18,8 +18,10 @@ let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 " map  <C-m> :SyntasticCheck<CR>
 let g:syntastic_check_on_wq = 0
 
-"*** color scheme
+"*** internal properties
 colorscheme delek
+set incsearch
+set hlsearch
 
 "*** neo complete cache enabled at startup
 let g:neocomplete#enable_at_startup = 1
@@ -39,7 +41,7 @@ map  <C-n> :tabnew<CR>:NERDTreeTabsOpen<CR>
 "*** TagBar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 let g:tagbar_width=26
-nmap <F8> :TagbarToggle<CR>
+nmap <C-t> :TagbarToggle<CR>
 "*** Airline - below line
 "let AirlineTheme jellybeans 
 "*** set lines
