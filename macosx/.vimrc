@@ -33,6 +33,8 @@ let g:neocomplete#enable_at_startup = 1
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd VimEnter * NERDTreeTabsOpen
+autocmd VimEnter * :map <C-j> ]m
+autocmd VimEnter * :map <C-k> [m
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>:NERDTreeTabsOpen<CR>
