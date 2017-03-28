@@ -49,4 +49,5 @@ nmap <C-t> :TagbarToggle<CR>
 "*** set lines
 set number
 
-
+" make backspace work like most other apps
+set backspace=2
